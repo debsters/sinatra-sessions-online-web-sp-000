@@ -24,7 +24,7 @@ class App < Sinatra::Base
     puts "Debug #{session}"
 
     if session[:foo] == 'hello'
-      bind.pry
+      binding.pry
       redirect '/fetch'
     else
 
